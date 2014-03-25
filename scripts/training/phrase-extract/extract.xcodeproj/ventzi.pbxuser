@@ -1,0 +1,280 @@
+// !$*UTF8*$!
+{
+	08FB7793FE84155DC02AAC07 /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = A95AABA7131E548B00A08632 /* extract */;
+		activeTarget = 8DD76F620486A84900D96B5E /* extract */;
+		codeSenseManager = A95AABE0131E54B300A08632 /* Code sense */;
+		executables = (
+			A95AABA7131E548B00A08632 /* extract */,
+			A95AABA8131E548B00A08632 /* score */,
+			A95AABA9131E548B00A08632 /* consolidate */,
+			A95AABAA131E548B00A08632 /* consolidate-direct */,
+			A95AABAB131E548B00A08632 /* extract-rules */,
+			A95AABAC131E548B00A08632 /* statistics */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					341,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					301,
+					60,
+					20,
+					48.16259765625,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 320754827;
+			PBXWorkspaceStateSaveDate = 320754827;
+		};
+		sourceControlManager = A95AABDF131E54B300A08632 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	1C05B9F61174CE51003585B2 /* extract-rules */ = {
+		activeExec = 0;
+		executables = (
+			A95AABAB131E548B00A08632 /* extract-rules */,
+		);
+	};
+	1C05BA2D1174CF6C003585B2 /* statistics */ = {
+		activeExec = 0;
+		executables = (
+			A95AABAC131E548B00A08632 /* statistics */,
+		);
+	};
+	1C47578E102B78AD00AB74DB /* score */ = {
+		activeExec = 0;
+		executables = (
+			A95AABA8131E548B00A08632 /* score */,
+		);
+	};
+	1C4757C3102B7EAA00AB74DB /* consolidate */ = {
+		activeExec = 0;
+		executables = (
+			A95AABA9131E548B00A08632 /* consolidate */,
+		);
+	};
+	1CF9F719108C9FE700EABCE5 /* consolidate-direct */ = {
+		activeExec = 0;
+		executables = (
+			A95AABAA131E548B00A08632 /* consolidate-direct */,
+		);
+	};
+	8DD76F620486A84900D96B5E /* extract */ = {
+		activeExec = 0;
+		executables = (
+			A95AABA7131E548B00A08632 /* extract */,
+		);
+	};
+	A95AABA7131E548B00A08632 /* extract */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = extract;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	A95AABA8131E548B00A08632 /* score */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = score;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	A95AABA9131E548B00A08632 /* consolidate */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = consolidate;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	A95AABAA131E548B00A08632 /* consolidate-direct */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = "consolidate-direct";
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	A95AABAB131E548B00A08632 /* extract-rules */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = "extract-rules";
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	A95AABAC131E548B00A08632 /* statistics */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = statistics;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	A95AABDF131E54B300A08632 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	A95AABE0131E54B300A08632 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+}

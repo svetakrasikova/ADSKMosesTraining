@@ -1,0 +1,242 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A924B2F8132A5F2F00AE2B22 /* reordering_classes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A924B2F5132A5F2F00AE2B22 /* reordering_classes.cpp */; };
+		A924B2F9132A5F2F00AE2B22 /* score.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A924B2F7132A5F2F00AE2B22 /* score.cpp */; };
+		A924B301132A891B00AE2B22 /* Bz2LineWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A924B2FE132A891B00AE2B22 /* Bz2LineWriter.cpp */; };
+		A924B302132A891B00AE2B22 /* Bz2LineReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A924B300132A891B00AE2B22 /* Bz2LineReader.cpp */; };
+		A924B304132A893800AE2B22 /* libbz2.1.0.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A924B303132A893800AE2B22 /* libbz2.1.0.6.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A924B2E3132A5B7300AE2B22 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A924B2E5132A5B7300AE2B22 /* score */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = score; sourceTree = BUILT_PRODUCTS_DIR; };
+		A924B2F5132A5F2F00AE2B22 /* reordering_classes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = reordering_classes.cpp; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		A924B2F6132A5F2F00AE2B22 /* reordering_classes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = reordering_classes.h; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		A924B2F7132A5F2F00AE2B22 /* score.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = score.cpp; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		A924B2FD132A891B00AE2B22 /* Bz2LineWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Bz2LineWriter.h; path = "../phrase-extract/Bz2LineWriter.h"; sourceTree = "<group>"; };
+		A924B2FE132A891B00AE2B22 /* Bz2LineWriter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Bz2LineWriter.cpp; path = "../phrase-extract/Bz2LineWriter.cpp"; sourceTree = "<group>"; };
+		A924B2FF132A891B00AE2B22 /* Bz2LineReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Bz2LineReader.h; path = "../phrase-extract/Bz2LineReader.h"; sourceTree = "<group>"; };
+		A924B300132A891B00AE2B22 /* Bz2LineReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Bz2LineReader.cpp; path = "../phrase-extract/Bz2LineReader.cpp"; sourceTree = "<group>"; };
+		A924B303132A893800AE2B22 /* libbz2.1.0.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbz2.1.0.6.dylib; path = ../../../../../../../../../../sw/lib/libbz2.1.0.6.dylib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A924B2E2132A5B7300AE2B22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A924B304132A893800AE2B22 /* libbz2.1.0.6.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A924B2DA132A5B7300AE2B22 = {
+			isa = PBXGroup;
+			children = (
+				A924B303132A893800AE2B22 /* libbz2.1.0.6.dylib */,
+				A924B2E8132A5B7300AE2B22 /* Source */,
+				A924B2E6132A5B7300AE2B22 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A924B2E6132A5B7300AE2B22 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A924B2E5132A5B7300AE2B22 /* score */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A924B2E8132A5B7300AE2B22 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				A924B2F5132A5F2F00AE2B22 /* reordering_classes.cpp */,
+				A924B2F6132A5F2F00AE2B22 /* reordering_classes.h */,
+				A924B2F7132A5F2F00AE2B22 /* score.cpp */,
+				A924B2FD132A891B00AE2B22 /* Bz2LineWriter.h */,
+				A924B2FE132A891B00AE2B22 /* Bz2LineWriter.cpp */,
+				A924B2FF132A891B00AE2B22 /* Bz2LineReader.h */,
+				A924B300132A891B00AE2B22 /* Bz2LineReader.cpp */,
+			);
+			name = Source;
+			path = "/Users/ventzi/Desktop/курсове - университет/EuroMatrixPlus/software/moses-trunk/scripts/training/lexical-reordering";
+			sourceTree = "<absolute>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A924B2E4132A5B7300AE2B22 /* score */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A924B2EE132A5B7300AE2B22 /* Build configuration list for PBXNativeTarget "score" */;
+			buildPhases = (
+				A924B2E1132A5B7300AE2B22 /* Sources */,
+				A924B2E2132A5B7300AE2B22 /* Frameworks */,
+				A924B2E3132A5B7300AE2B22 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = score;
+			productName = "Lexical Reordering";
+			productReference = A924B2E5132A5B7300AE2B22 /* score */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A924B2DC132A5B7300AE2B22 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Autodesk Sàrl";
+			};
+			buildConfigurationList = A924B2DF132A5B7300AE2B22 /* Build configuration list for PBXProject "Lexical Reordering" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A924B2DA132A5B7300AE2B22;
+			productRefGroup = A924B2E6132A5B7300AE2B22 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A924B2E4132A5B7300AE2B22 /* score */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A924B2E1132A5B7300AE2B22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A924B2F8132A5F2F00AE2B22 /* reordering_classes.cpp in Sources */,
+				A924B2F9132A5F2F00AE2B22 /* score.cpp in Sources */,
+				A924B301132A891B00AE2B22 /* Bz2LineWriter.cpp in Sources */,
+				A924B302132A891B00AE2B22 /* Bz2LineReader.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A924B2EC132A5B7300AE2B22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				DEAD_CODE_STRIPPING = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SSE41_EXTENSIONS = YES;
+				GCC_ENABLE_SSE42_EXTENSIONS = YES;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					/sw/include,
+					/usr/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/sw/lib,
+					/usr/lib,
+				);
+				LLVM_LTO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A924B2ED132A5B7300AE2B22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				DEAD_CODE_STRIPPING = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SSE41_EXTENSIONS = YES;
+				GCC_ENABLE_SSE42_EXTENSIONS = YES;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					/sw/include,
+					/usr/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/sw/lib,
+					/usr/lib,
+				);
+				LLVM_LTO = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A924B2EF132A5B7300AE2B22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				LLVM_LTO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A924B2F0132A5B7300AE2B22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LLVM_LTO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A924B2DF132A5B7300AE2B22 /* Build configuration list for PBXProject "Lexical Reordering" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A924B2EC132A5B7300AE2B22 /* Debug */,
+				A924B2ED132A5B7300AE2B22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A924B2EE132A5B7300AE2B22 /* Build configuration list for PBXNativeTarget "score" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A924B2EF132A5B7300AE2B22 /* Debug */,
+				A924B2F0132A5B7300AE2B22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A924B2DC132A5B7300AE2B22 /* Project object */;
+}

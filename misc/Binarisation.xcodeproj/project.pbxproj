@@ -1,0 +1,990 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A939992E166927330065D7E4 /* InputFileStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A969D5C5132F4ED200087586 /* InputFileStream.cpp */; };
+		A939992F1669275C0065D7E4 /* PhraseDictionaryTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D32D9132F70640071BE55 /* PhraseDictionaryTree.cpp */; };
+		A9399930166927C50065D7E4 /* Dictionary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D3279132F678B0071BE55 /* Dictionary.cpp */; };
+		A9399931166928910065D7E4 /* Util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A969D5D4132F4F8B00087586 /* Util.cpp */; };
+		A9399932166928CA0065D7E4 /* LVoc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A969D5DD132F4FE200087586 /* LVoc.cpp */; };
+		A93999331669291E0065D7E4 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A969D5C1132F4EB300087586 /* Timer.cpp */; };
+		A9399934166929340065D7E4 /* UserMessage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A969D5E7132F508200087586 /* UserMessage.cpp */; };
+		A9399935166929EB0065D7E4 /* libOnDiskPt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9F9617F1330B8AF00F435D3 /* libOnDiskPt.a */; };
+		A969D5FC132F51C600087586 /* processLexicalTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A969D5BF132F4E5000087586 /* processLexicalTable.cpp */; };
+		A969D5FD132F51CD00087586 /* processPhraseTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A969D5C0132F4E5000087586 /* processPhraseTable.cpp */; };
+		A969D5FF132F51DF00087586 /* Util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A969D5D4132F4F8B00087586 /* Util.cpp */; };
+		A969D600132F51E800087586 /* InputFileStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A969D5C5132F4ED200087586 /* InputFileStream.cpp */; };
+		A969D601132F51F500087586 /* LexicalReorderingTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A969D5C3132F4EC600087586 /* LexicalReorderingTable.cpp */; };
+		A969D604132F526C00087586 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A969D603132F526B00087586 /* libz.1.2.5.dylib */; };
+		A969D605132F526C00087586 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A969D603132F526B00087586 /* libz.1.2.5.dylib */; };
+		A969D607132F527800087586 /* libbz2.1.0.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A969D606132F527700087586 /* libbz2.1.0.6.dylib */; };
+		A969D608132F527800087586 /* libbz2.1.0.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A969D606132F527700087586 /* libbz2.1.0.6.dylib */; };
+		A969D609132F52EF00087586 /* Phrase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A969D5CE132F4F4600087586 /* Phrase.cpp */; };
+		A969D60A132F52F200087586 /* Word.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A969D5D6132F4F9800087586 /* Word.cpp */; };
+		A969D60B132F52FB00087586 /* WordsBitmap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A969D5D8132F4FA500087586 /* WordsBitmap.cpp */; };
+		A969D60E132F532000087586 /* StaticData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A969D60C132F531500087586 /* StaticData.cpp */; };
+		A969D610132F538E00087586 /* PrefixTreeMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A969D5D0132F4F6400087586 /* PrefixTreeMap.cpp */; };
+		A96D3238132F63F10071BE55 /* ConfusionNet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A969D5CA132F4F2400087586 /* ConfusionNet.cpp */; };
+		A96D323A132F63F50071BE55 /* Sentence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A969D5D2132F4F7900087586 /* Sentence.cpp */; };
+		A96D323B132F64130071BE55 /* UserMessage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A969D5E7132F508200087586 /* UserMessage.cpp */; };
+		A96D323C132F64190071BE55 /* FactorCollection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A969D5CC132F4F3700087586 /* FactorCollection.cpp */; };
+		A96D323D132F64200071BE55 /* Factor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A969D5DF132F4FFE00087586 /* Factor.cpp */; };
+		A96D323E132F64380071BE55 /* ReorderingConstraint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A969D5E5132F504C00087586 /* ReorderingConstraint.cpp */; };
+		A96D323F132F64580071BE55 /* LVoc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A969D5DD132F4FE200087586 /* LVoc.cpp */; };
+		A96D3242132F64B50071BE55 /* LexicalReordering.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D3240132F64B40071BE55 /* LexicalReordering.cpp */; };
+		A96D3245132F64CA0071BE55 /* LexicalReorderingState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D3243132F64C90071BE55 /* LexicalReorderingState.cpp */; };
+		A96D3248132F64E80071BE55 /* FFState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D3246132F64E60071BE55 /* FFState.cpp */; };
+		A96D324B132F650E0071BE55 /* Hypothesis.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D3249132F650C0071BE55 /* Hypothesis.cpp */; };
+		A96D324E132F65430071BE55 /* InputType.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D324C132F65420071BE55 /* InputType.cpp */; };
+		A96D3251132F655E0071BE55 /* TargetPhraseCollection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D324F132F655C0071BE55 /* TargetPhraseCollection.cpp */; };
+		A96D3254132F658A0071BE55 /* LMList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D3252132F65880071BE55 /* LMList.cpp */; };
+		A96D3259132F65D00071BE55 /* LanguageModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D3255132F65C30071BE55 /* LanguageModel.cpp */; };
+		A96D325A132F65D00071BE55 /* LanguageModelFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D3257132F65C60071BE55 /* LanguageModelFactory.cpp */; };
+		A96D325D132F65F20071BE55 /* Manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D325B132F65EE0071BE55 /* Manager.cpp */; };
+		A96D3260132F662E0071BE55 /* ScoreIndexManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D325E132F662A0071BE55 /* ScoreIndexManager.cpp */; };
+		A96D3267132F66960071BE55 /* LanguageModelInternal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D3261132F66760071BE55 /* LanguageModelInternal.cpp */; };
+		A96D3268132F66960071BE55 /* LanguageModelJoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D3263132F667A0071BE55 /* LanguageModelJoint.cpp */; };
+		A96D3269132F66960071BE55 /* LanguageModelSkip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D3265132F66850071BE55 /* LanguageModelSkip.cpp */; };
+		A96D3275132F67020071BE55 /* LanguageModelParallelBackoff.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D326C132F66B80071BE55 /* LanguageModelParallelBackoff.cpp */; };
+		A96D3277132F67020071BE55 /* LanguageModelRemote.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D3270132F66CF0071BE55 /* LanguageModelRemote.cpp */; };
+		A96D3278132F67020071BE55 /* LanguageModelSRI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D3272132F66E60071BE55 /* LanguageModelSRI.cpp */; };
+		A96D327B132F678F0071BE55 /* Dictionary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D3279132F678B0071BE55 /* Dictionary.cpp */; };
+		A96D327E132F69630071BE55 /* LanguageModelMultiFactor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D327C132F695E0071BE55 /* LanguageModelMultiFactor.cpp */; };
+		A96D3281132F69E10071BE55 /* GenerationDictionary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D327F132F69DC0071BE55 /* GenerationDictionary.cpp */; };
+		A96D3284132F6A000071BE55 /* LanguageModelSingleFactor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D3282132F69FC0071BE55 /* LanguageModelSingleFactor.cpp */; };
+		A96D3289132F6A580071BE55 /* TranslationOption.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D3285132F6A440071BE55 /* TranslationOption.cpp */; };
+		A96D328A132F6A580071BE55 /* TranslationOptionCollection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D3287132F6A490071BE55 /* TranslationOptionCollection.cpp */; };
+		A96D328F132F6AAF0071BE55 /* TranslationOptionCollectionConfusionNet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D328B132F6AA30071BE55 /* TranslationOptionCollectionConfusionNet.cpp */; };
+		A96D3290132F6AAF0071BE55 /* TranslationOptionList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D328D132F6AA70071BE55 /* TranslationOptionList.cpp */; };
+		A96D3293132F6AE30071BE55 /* TranslationOptionCollectionText.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D3291132F6ADF0071BE55 /* TranslationOptionCollectionText.cpp */; };
+		A96D3296132F6AF60071BE55 /* TrellisPath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D3294132F6AF20071BE55 /* TrellisPath.cpp */; };
+		A96D3299132F6B270071BE55 /* ScoreProducer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D3297132F6B230071BE55 /* ScoreProducer.cpp */; };
+		A96D329C132F6B7B0071BE55 /* TargetPhrase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D329A132F6B760071BE55 /* TargetPhrase.cpp */; };
+		A96D329F132F6BC30071BE55 /* Parameter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D329D132F6BBE0071BE55 /* Parameter.cpp */; };
+		A96D32A2132F6BD30071BE55 /* SentenceStats.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D32A0132F6BCE0071BE55 /* SentenceStats.cpp */; };
+		A96D32A5132F6BEC0071BE55 /* DecodeGraph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D32A3132F6BE60071BE55 /* DecodeGraph.cpp */; };
+		A96D32A8132F6C000071BE55 /* DecodeStep.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D32A6132F6BFA0071BE55 /* DecodeStep.cpp */; };
+		A96D32AB132F6C290071BE55 /* PhraseDictionaryMemory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D32A9132F6C220071BE55 /* PhraseDictionaryMemory.cpp */; };
+		A96D32B0132F6C5D0071BE55 /* PhraseDictionary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D32AC132F6C440071BE55 /* PhraseDictionary.cpp */; };
+		A96D32B1132F6C5D0071BE55 /* PhraseDictionaryNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D32AE132F6C4B0071BE55 /* PhraseDictionaryNode.cpp */; };
+		A96D32B4132F6C990071BE55 /* WordsRange.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D32B2132F6C920071BE55 /* WordsRange.cpp */; };
+		A96D32B7132F6CF30071BE55 /* ReorderingStack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D32B5132F6CEB0071BE55 /* ReorderingStack.cpp */; };
+		A96D32BC132F6D680071BE55 /* DecodeStepGeneration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D32B8132F6D3E0071BE55 /* DecodeStepGeneration.cpp */; };
+		A96D32BD132F6D680071BE55 /* DecodeStepTranslation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D32BA132F6D480071BE55 /* DecodeStepTranslation.cpp */; };
+		A96D32C0132F6D8B0071BE55 /* DummyScoreProducers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D32BE132F6D820071BE55 /* DummyScoreProducers.cpp */; };
+		A96D32C3132F6DB40071BE55 /* GlobalLexicalModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D32C1132F6DAA0071BE55 /* GlobalLexicalModel.cpp */; };
+		A96D32CE132F6F030071BE55 /* PhraseDictionaryDynSuffixArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D32C4132F6E260071BE55 /* PhraseDictionaryDynSuffixArray.cpp */; };
+		A96D32CF132F6F030071BE55 /* PhraseDictionaryNewFormat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D32C6132F6E2F0071BE55 /* PhraseDictionaryNewFormat.cpp */; };
+		A96D32D0132F6F030071BE55 /* PhraseDictionaryNodeNewFormat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D32C8132F6E470071BE55 /* PhraseDictionaryNodeNewFormat.cpp */; };
+		A96D32D1132F6F030071BE55 /* PhraseDictionaryOnDisk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D32CA132F6E730071BE55 /* PhraseDictionaryOnDisk.cpp */; };
+		A96D32D2132F6F030071BE55 /* PhraseDictionaryTreeAdaptor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D32CC132F6EB40071BE55 /* PhraseDictionaryTreeAdaptor.cpp */; };
+		A96D32D5132F6FED0071BE55 /* BilingualDynSuffixArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D32D3132F6FDF0071BE55 /* BilingualDynSuffixArray.cpp */; };
+		A96D32D8132F70370071BE55 /* DynSuffixArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D32D6132F702E0071BE55 /* DynSuffixArray.cpp */; };
+		A96D32DB132F706E0071BE55 /* PhraseDictionaryTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D32D9132F70640071BE55 /* PhraseDictionaryTree.cpp */; };
+		A96D32DE132F70C70071BE55 /* ChartRuleCollection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D32DC132F70BC0071BE55 /* ChartRuleCollection.cpp */; };
+		A96D32E1132F70DB0071BE55 /* DotChart.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D32DF132F70D00071BE55 /* DotChart.cpp */; };
+		A96D32E4132F71120071BE55 /* AlignmentInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D32E2132F71040071BE55 /* AlignmentInfo.cpp */; };
+		A96D32E7132F718C0071BE55 /* FeatureFunction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D32E5132F71810071BE55 /* FeatureFunction.cpp */; };
+		A96D32EA132F71FF0071BE55 /* ScoreComponentCollection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D32E8132F71F20071BE55 /* ScoreComponentCollection.cpp */; };
+		A96D32ED132F72460071BE55 /* ChartRule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D32EB132F72390071BE55 /* ChartRule.cpp */; };
+		A96D32F6132F73950071BE55 /* Search.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D32F4132F73870071BE55 /* Search.cpp */; };
+		A96D32FB132F74120071BE55 /* SquareMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D32F7132F73C70071BE55 /* SquareMatrix.cpp */; };
+		A96D32FC132F74120071BE55 /* TrellisPathCollection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D32F9132F73DD0071BE55 /* TrellisPathCollection.cpp */; };
+		A96D3301132F74850071BE55 /* SearchCubePruning.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D32FD132F744C0071BE55 /* SearchCubePruning.cpp */; };
+		A96D3302132F74850071BE55 /* SearchNormal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D32FF132F745A0071BE55 /* SearchNormal.cpp */; };
+		A96D3305132F74DA0071BE55 /* BitmapContainer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D3303132F74CB0071BE55 /* BitmapContainer.cpp */; };
+		A96D330C132F756B0071BE55 /* HypothesisStack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D3306132F74EC0071BE55 /* HypothesisStack.cpp */; };
+		A96D330D132F756B0071BE55 /* HypothesisStackCubePruning.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D3308132F74FA0071BE55 /* HypothesisStackCubePruning.cpp */; };
+		A96D330E132F756B0071BE55 /* HypothesisStackNormal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D330A132F75230071BE55 /* HypothesisStackNormal.cpp */; };
+		A96D3311132F76110071BE55 /* PartialTranslOptColl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D330F132F75B00071BE55 /* PartialTranslOptColl.cpp */; };
+		A96D331D132F78A70071BE55 /* file.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D3317132F785B0071BE55 /* file.cpp */; };
+		A96D331E132F78A70071BE55 /* vocab.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D331B132F78750071BE55 /* vocab.cpp */; };
+		A96D3320132F7B300071BE55 /* XmlOption.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A969D5E3132F502D00087586 /* XmlOption.cpp */; };
+		A96D332F132F7C5F0071BE55 /* NGramCollection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D332B132F7BED0071BE55 /* NGramCollection.cpp */; };
+		A96D3330132F7C5F0071BE55 /* NGramNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D332D132F7C070071BE55 /* NGramNode.cpp */; };
+		A96D3333132F7CF50071BE55 /* FactorTypeSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D3331132F7CDB0071BE55 /* FactorTypeSet.cpp */; };
+		A96D3336132F7D670071BE55 /* WordConsumed.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D3334132F7D4C0071BE55 /* WordConsumed.cpp */; };
+		A96D3349132F94D30071BE55 /* libflm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A96D3322132F7B8C0071BE55 /* libflm.a */; };
+		A96D334A132F94DE0071BE55 /* libdstruct.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A96D3321132F7B8C0071BE55 /* libdstruct.a */; };
+		A96D334B132F94FC0071BE55 /* libmisc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A96D3324132F7B8C0071BE55 /* libmisc.a */; };
+		A96D334C132F95150071BE55 /* liboolm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A96D32F0132F73260071BE55 /* liboolm.a */; };
+		A96D334F132F971B0071BE55 /* DotChartOnDisk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D334D132F96CF0071BE55 /* DotChartOnDisk.cpp */; };
+		A96D3352132F98220071BE55 /* PhraseDictionaryNewFormatChart.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D3350132F97ED0071BE55 /* PhraseDictionaryNewFormatChart.cpp */; };
+		A96D3353132F98220071BE55 /* PhraseDictionaryOnDiskChart.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A96D3351132F97FD0071BE55 /* PhraseDictionaryOnDiskChart.cpp */; };
+		A9F96176132FB7BD00F435D3 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A969D5C1132F4EB300087586 /* Timer.cpp */; };
+		A9F961801330B8AF00F435D3 /* libOnDiskPt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9F9617F1330B8AF00F435D3 /* libOnDiskPt.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A96D3342132F7E980071BE55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A96D333B132F7E920071BE55 /* OnDiskPt.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC046055464E500DB518D;
+			remoteInfo = OnDiskPt;
+		};
+		A96D3345132F93760071BE55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A96D333B132F7E920071BE55 /* OnDiskPt.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC045055464E500DB518D;
+			remoteInfo = OnDiskPt;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A969D5EB132F511D00087586 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		A969D5F6132F51AD00087586 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A969D5BF132F4E5000087586 /* processLexicalTable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = processLexicalTable.cpp; sourceTree = "<group>"; };
+		A969D5C0132F4E5000087586 /* processPhraseTable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = processPhraseTable.cpp; sourceTree = "<group>"; };
+		A969D5C1132F4EB300087586 /* Timer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Timer.cpp; path = ../moses/src/Timer.cpp; sourceTree = "<group>"; };
+		A969D5C2132F4EB300087586 /* Timer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Timer.h; path = ../moses/src/Timer.h; sourceTree = "<group>"; };
+		A969D5C3132F4EC600087586 /* LexicalReorderingTable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = LexicalReorderingTable.cpp; path = ../moses/src/LexicalReorderingTable.cpp; sourceTree = "<group>"; };
+		A969D5C4132F4EC600087586 /* LexicalReorderingTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LexicalReorderingTable.h; path = ../moses/src/LexicalReorderingTable.h; sourceTree = "<group>"; };
+		A969D5C5132F4ED200087586 /* InputFileStream.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = InputFileStream.cpp; path = ../moses/src/InputFileStream.cpp; sourceTree = "<group>"; };
+		A969D5C6132F4ED200087586 /* InputFileStream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = InputFileStream.h; path = ../moses/src/InputFileStream.h; sourceTree = "<group>"; };
+		A969D5C7132F4F0300087586 /* TypeDef.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TypeDef.h; path = ../moses/src/TypeDef.h; sourceTree = "<group>"; };
+		A969D5C8132F4F1400087586 /* PhraseDictionaryTree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = PhraseDictionaryTree.cpp; path = ../moses/src/PhraseDictionaryTree.cpp; sourceTree = "<group>"; };
+		A969D5C9132F4F1400087586 /* PhraseDictionaryTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PhraseDictionaryTree.h; path = ../moses/src/PhraseDictionaryTree.h; sourceTree = "<group>"; };
+		A969D5CA132F4F2400087586 /* ConfusionNet.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ConfusionNet.cpp; path = ../moses/src/ConfusionNet.cpp; sourceTree = "<group>"; };
+		A969D5CB132F4F2400087586 /* ConfusionNet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ConfusionNet.h; path = ../moses/src/ConfusionNet.h; sourceTree = "<group>"; };
+		A969D5CC132F4F3700087586 /* FactorCollection.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = FactorCollection.cpp; path = ../moses/src/FactorCollection.cpp; sourceTree = "<group>"; };
+		A969D5CD132F4F3700087586 /* FactorCollection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FactorCollection.h; path = ../moses/src/FactorCollection.h; sourceTree = "<group>"; };
+		A969D5CE132F4F4600087586 /* Phrase.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Phrase.cpp; path = ../moses/src/Phrase.cpp; sourceTree = "<group>"; };
+		A969D5CF132F4F4700087586 /* Phrase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Phrase.h; path = ../moses/src/Phrase.h; sourceTree = "<group>"; };
+		A969D5D0132F4F6400087586 /* PrefixTreeMap.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = PrefixTreeMap.cpp; path = ../moses/src/PrefixTreeMap.cpp; sourceTree = "<group>"; };
+		A969D5D1132F4F6400087586 /* PrefixTreeMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PrefixTreeMap.h; path = ../moses/src/PrefixTreeMap.h; sourceTree = "<group>"; };
+		A969D5D2132F4F7900087586 /* Sentence.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Sentence.cpp; path = ../moses/src/Sentence.cpp; sourceTree = "<group>"; };
+		A969D5D3132F4F7900087586 /* Sentence.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Sentence.h; path = ../moses/src/Sentence.h; sourceTree = "<group>"; };
+		A969D5D4132F4F8B00087586 /* Util.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Util.cpp; path = ../moses/src/Util.cpp; sourceTree = "<group>"; };
+		A969D5D5132F4F8B00087586 /* Util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Util.h; path = ../moses/src/Util.h; sourceTree = "<group>"; };
+		A969D5D6132F4F9800087586 /* Word.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Word.cpp; path = ../moses/src/Word.cpp; sourceTree = "<group>"; };
+		A969D5D7132F4F9800087586 /* Word.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Word.h; path = ../moses/src/Word.h; sourceTree = "<group>"; };
+		A969D5D8132F4FA500087586 /* WordsBitmap.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = WordsBitmap.cpp; path = ../moses/src/WordsBitmap.cpp; sourceTree = "<group>"; };
+		A969D5D9132F4FA600087586 /* WordsBitmap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = WordsBitmap.h; path = ../moses/src/WordsBitmap.h; sourceTree = "<group>"; };
+		A969D5DA132F4FC400087586 /* File.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = File.cpp; path = ../moses/src/File.cpp; sourceTree = "<group>"; };
+		A969D5DB132F4FC400087586 /* File.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = File.h; path = ../moses/src/File.h; sourceTree = "<group>"; };
+		A969D5DC132F4FD100087586 /* ObjectPool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ObjectPool.h; path = ../moses/src/ObjectPool.h; sourceTree = "<group>"; };
+		A969D5DD132F4FE200087586 /* LVoc.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = LVoc.cpp; path = ../moses/src/LVoc.cpp; sourceTree = "<group>"; };
+		A969D5DE132F4FE200087586 /* LVoc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LVoc.h; path = ../moses/src/LVoc.h; sourceTree = "<group>"; };
+		A969D5DF132F4FFE00087586 /* Factor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Factor.cpp; path = ../moses/src/Factor.cpp; sourceTree = "<group>"; };
+		A969D5E0132F4FFE00087586 /* Factor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Factor.h; path = ../moses/src/Factor.h; sourceTree = "<group>"; };
+		A969D5E1132F501100087586 /* hash.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = hash.cpp; path = ../moses/src/hash.cpp; sourceTree = "<group>"; };
+		A969D5E2132F501200087586 /* hash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = hash.h; path = ../moses/src/hash.h; sourceTree = "<group>"; };
+		A969D5E3132F502D00087586 /* XmlOption.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = XmlOption.cpp; path = ../moses/src/XmlOption.cpp; sourceTree = "<group>"; };
+		A969D5E4132F502E00087586 /* XmlOption.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = XmlOption.h; path = ../moses/src/XmlOption.h; sourceTree = "<group>"; };
+		A969D5E5132F504C00087586 /* ReorderingConstraint.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ReorderingConstraint.cpp; path = ../moses/src/ReorderingConstraint.cpp; sourceTree = "<group>"; };
+		A969D5E6132F504D00087586 /* ReorderingConstraint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ReorderingConstraint.h; path = ../moses/src/ReorderingConstraint.h; sourceTree = "<group>"; };
+		A969D5E7132F508200087586 /* UserMessage.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = UserMessage.cpp; path = ../moses/src/UserMessage.cpp; sourceTree = "<group>"; };
+		A969D5E8132F508300087586 /* UserMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UserMessage.h; path = ../moses/src/UserMessage.h; sourceTree = "<group>"; };
+		A969D5ED132F511D00087586 /* processPhraseTable */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = processPhraseTable; sourceTree = BUILT_PRODUCTS_DIR; };
+		A969D5FA132F51AD00087586 /* processLexicalTable-debug */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "processLexicalTable-debug"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A969D602132F520E00087586 /* gzfilebuf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = gzfilebuf.h; path = ../moses/src/gzfilebuf.h; sourceTree = "<group>"; };
+		A969D603132F526B00087586 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = /usr/lib/libz.1.2.5.dylib; sourceTree = "<absolute>"; };
+		A969D606132F527700087586 /* libbz2.1.0.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbz2.1.0.6.dylib; path = "/Users/ventzi/Desktop/курсове - университет/EuroMatrixPlus/software/moses-trunk/scripts/training/lexical-reordering/../../../../../../../../../../sw/lib/libbz2.1.0.6.dylib"; sourceTree = "<absolute>"; };
+		A969D60C132F531500087586 /* StaticData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = StaticData.cpp; path = ../moses/src/StaticData.cpp; sourceTree = "<group>"; };
+		A969D60D132F531900087586 /* StaticData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StaticData.h; path = ../moses/src/StaticData.h; sourceTree = "<group>"; };
+		A969D60F132F538600087586 /* PrefixTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PrefixTree.h; path = ../moses/src/PrefixTree.h; sourceTree = "<group>"; };
+		A96D3240132F64B40071BE55 /* LexicalReordering.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LexicalReordering.cpp; path = ../moses/src/LexicalReordering.cpp; sourceTree = "<group>"; };
+		A96D3241132F64B40071BE55 /* LexicalReordering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LexicalReordering.h; path = ../moses/src/LexicalReordering.h; sourceTree = "<group>"; };
+		A96D3243132F64C90071BE55 /* LexicalReorderingState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LexicalReorderingState.cpp; path = ../moses/src/LexicalReorderingState.cpp; sourceTree = "<group>"; };
+		A96D3244132F64C90071BE55 /* LexicalReorderingState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LexicalReorderingState.h; path = ../moses/src/LexicalReorderingState.h; sourceTree = "<group>"; };
+		A96D3246132F64E60071BE55 /* FFState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FFState.cpp; path = ../moses/src/FFState.cpp; sourceTree = "<group>"; };
+		A96D3247132F64E70071BE55 /* FFState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FFState.h; path = ../moses/src/FFState.h; sourceTree = "<group>"; };
+		A96D3249132F650C0071BE55 /* Hypothesis.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Hypothesis.cpp; path = ../moses/src/Hypothesis.cpp; sourceTree = "<group>"; };
+		A96D324A132F650C0071BE55 /* Hypothesis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Hypothesis.h; path = ../moses/src/Hypothesis.h; sourceTree = "<group>"; };
+		A96D324C132F65420071BE55 /* InputType.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = InputType.cpp; path = ../moses/src/InputType.cpp; sourceTree = "<group>"; };
+		A96D324D132F65420071BE55 /* InputType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InputType.h; path = ../moses/src/InputType.h; sourceTree = "<group>"; };
+		A96D324F132F655C0071BE55 /* TargetPhraseCollection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TargetPhraseCollection.cpp; path = ../moses/src/TargetPhraseCollection.cpp; sourceTree = "<group>"; };
+		A96D3250132F655C0071BE55 /* TargetPhraseCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TargetPhraseCollection.h; path = ../moses/src/TargetPhraseCollection.h; sourceTree = "<group>"; };
+		A96D3252132F65880071BE55 /* LMList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LMList.cpp; path = ../moses/src/LMList.cpp; sourceTree = "<group>"; };
+		A96D3253132F65890071BE55 /* LMList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LMList.h; path = ../moses/src/LMList.h; sourceTree = "<group>"; };
+		A96D3255132F65C30071BE55 /* LanguageModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LanguageModel.cpp; path = ../moses/src/LanguageModel.cpp; sourceTree = "<group>"; };
+		A96D3256132F65C40071BE55 /* LanguageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LanguageModel.h; path = ../moses/src/LanguageModel.h; sourceTree = "<group>"; };
+		A96D3257132F65C60071BE55 /* LanguageModelFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LanguageModelFactory.cpp; path = ../moses/src/LanguageModelFactory.cpp; sourceTree = "<group>"; };
+		A96D3258132F65CA0071BE55 /* LanguageModelFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LanguageModelFactory.h; path = ../moses/src/LanguageModelFactory.h; sourceTree = "<group>"; };
+		A96D325B132F65EE0071BE55 /* Manager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Manager.cpp; path = ../moses/src/Manager.cpp; sourceTree = "<group>"; };
+		A96D325C132F65EF0071BE55 /* Manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Manager.h; path = ../moses/src/Manager.h; sourceTree = "<group>"; };
+		A96D325E132F662A0071BE55 /* ScoreIndexManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ScoreIndexManager.cpp; path = ../moses/src/ScoreIndexManager.cpp; sourceTree = "<group>"; };
+		A96D325F132F662B0071BE55 /* ScoreIndexManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScoreIndexManager.h; path = ../moses/src/ScoreIndexManager.h; sourceTree = "<group>"; };
+		A96D3261132F66760071BE55 /* LanguageModelInternal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LanguageModelInternal.cpp; path = ../moses/src/LanguageModelInternal.cpp; sourceTree = "<group>"; };
+		A96D3262132F66770071BE55 /* LanguageModelInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LanguageModelInternal.h; path = ../moses/src/LanguageModelInternal.h; sourceTree = "<group>"; };
+		A96D3263132F667A0071BE55 /* LanguageModelJoint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LanguageModelJoint.cpp; path = ../moses/src/LanguageModelJoint.cpp; sourceTree = "<group>"; };
+		A96D3264132F667F0071BE55 /* LanguageModelJoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LanguageModelJoint.h; path = ../moses/src/LanguageModelJoint.h; sourceTree = "<group>"; };
+		A96D3265132F66850071BE55 /* LanguageModelSkip.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LanguageModelSkip.cpp; path = ../moses/src/LanguageModelSkip.cpp; sourceTree = "<group>"; };
+		A96D3266132F668D0071BE55 /* LanguageModelSkip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LanguageModelSkip.h; path = ../moses/src/LanguageModelSkip.h; sourceTree = "<group>"; };
+		A96D326A132F66B50071BE55 /* LanguageModelIRST.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LanguageModelIRST.cpp; path = ../moses/src/LanguageModelIRST.cpp; sourceTree = "<group>"; };
+		A96D326B132F66B60071BE55 /* LanguageModelIRST.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LanguageModelIRST.h; path = ../moses/src/LanguageModelIRST.h; sourceTree = "<group>"; };
+		A96D326C132F66B80071BE55 /* LanguageModelParallelBackoff.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LanguageModelParallelBackoff.cpp; path = ../moses/src/LanguageModelParallelBackoff.cpp; sourceTree = "<group>"; };
+		A96D326D132F66BB0071BE55 /* LanguageModelParallelBackoff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LanguageModelParallelBackoff.h; path = ../moses/src/LanguageModelParallelBackoff.h; sourceTree = "<group>"; };
+		A96D3270132F66CF0071BE55 /* LanguageModelRemote.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LanguageModelRemote.cpp; path = ../moses/src/LanguageModelRemote.cpp; sourceTree = "<group>"; };
+		A96D3271132F66DA0071BE55 /* LanguageModelRemote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LanguageModelRemote.h; path = ../moses/src/LanguageModelRemote.h; sourceTree = "<group>"; };
+		A96D3272132F66E60071BE55 /* LanguageModelSRI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LanguageModelSRI.cpp; path = ../moses/src/LanguageModelSRI.cpp; sourceTree = "<group>"; };
+		A96D3273132F66F30071BE55 /* LanguageModelSRI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LanguageModelSRI.h; path = ../moses/src/LanguageModelSRI.h; sourceTree = "<group>"; };
+		A96D3279132F678B0071BE55 /* Dictionary.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Dictionary.cpp; path = ../moses/src/Dictionary.cpp; sourceTree = "<group>"; };
+		A96D327A132F678C0071BE55 /* Dictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Dictionary.h; path = ../moses/src/Dictionary.h; sourceTree = "<group>"; };
+		A96D327C132F695E0071BE55 /* LanguageModelMultiFactor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LanguageModelMultiFactor.cpp; path = ../moses/src/LanguageModelMultiFactor.cpp; sourceTree = "<group>"; };
+		A96D327D132F69600071BE55 /* LanguageModelMultiFactor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LanguageModelMultiFactor.h; path = ../moses/src/LanguageModelMultiFactor.h; sourceTree = "<group>"; };
+		A96D327F132F69DC0071BE55 /* GenerationDictionary.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GenerationDictionary.cpp; path = ../moses/src/GenerationDictionary.cpp; sourceTree = "<group>"; };
+		A96D3280132F69DE0071BE55 /* GenerationDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GenerationDictionary.h; path = ../moses/src/GenerationDictionary.h; sourceTree = "<group>"; };
+		A96D3282132F69FC0071BE55 /* LanguageModelSingleFactor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LanguageModelSingleFactor.cpp; path = ../moses/src/LanguageModelSingleFactor.cpp; sourceTree = "<group>"; };
+		A96D3283132F69FE0071BE55 /* LanguageModelSingleFactor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LanguageModelSingleFactor.h; path = ../moses/src/LanguageModelSingleFactor.h; sourceTree = "<group>"; };
+		A96D3285132F6A440071BE55 /* TranslationOption.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TranslationOption.cpp; path = ../moses/src/TranslationOption.cpp; sourceTree = "<group>"; };
+		A96D3286132F6A450071BE55 /* TranslationOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TranslationOption.h; path = ../moses/src/TranslationOption.h; sourceTree = "<group>"; };
+		A96D3287132F6A490071BE55 /* TranslationOptionCollection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TranslationOptionCollection.cpp; path = ../moses/src/TranslationOptionCollection.cpp; sourceTree = "<group>"; };
+		A96D3288132F6A500071BE55 /* TranslationOptionCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TranslationOptionCollection.h; path = ../moses/src/TranslationOptionCollection.h; sourceTree = "<group>"; };
+		A96D328B132F6AA30071BE55 /* TranslationOptionCollectionConfusionNet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TranslationOptionCollectionConfusionNet.cpp; path = ../moses/src/TranslationOptionCollectionConfusionNet.cpp; sourceTree = "<group>"; };
+		A96D328C132F6AA40071BE55 /* TranslationOptionCollectionConfusionNet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TranslationOptionCollectionConfusionNet.h; path = ../moses/src/TranslationOptionCollectionConfusionNet.h; sourceTree = "<group>"; };
+		A96D328D132F6AA70071BE55 /* TranslationOptionList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TranslationOptionList.cpp; path = ../moses/src/TranslationOptionList.cpp; sourceTree = "<group>"; };
+		A96D328E132F6AAB0071BE55 /* TranslationOptionList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TranslationOptionList.h; path = ../moses/src/TranslationOptionList.h; sourceTree = "<group>"; };
+		A96D3291132F6ADF0071BE55 /* TranslationOptionCollectionText.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TranslationOptionCollectionText.cpp; path = ../moses/src/TranslationOptionCollectionText.cpp; sourceTree = "<group>"; };
+		A96D3292132F6AE10071BE55 /* TranslationOptionCollectionText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TranslationOptionCollectionText.h; path = ../moses/src/TranslationOptionCollectionText.h; sourceTree = "<group>"; };
+		A96D3294132F6AF20071BE55 /* TrellisPath.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TrellisPath.cpp; path = ../moses/src/TrellisPath.cpp; sourceTree = "<group>"; };
+		A96D3295132F6AF30071BE55 /* TrellisPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrellisPath.h; path = ../moses/src/TrellisPath.h; sourceTree = "<group>"; };
+		A96D3297132F6B230071BE55 /* ScoreProducer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ScoreProducer.cpp; path = ../moses/src/ScoreProducer.cpp; sourceTree = "<group>"; };
+		A96D3298132F6B240071BE55 /* ScoreProducer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScoreProducer.h; path = ../moses/src/ScoreProducer.h; sourceTree = "<group>"; };
+		A96D329A132F6B760071BE55 /* TargetPhrase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TargetPhrase.cpp; path = ../moses/src/TargetPhrase.cpp; sourceTree = "<group>"; };
+		A96D329B132F6B780071BE55 /* TargetPhrase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TargetPhrase.h; path = ../moses/src/TargetPhrase.h; sourceTree = "<group>"; };
+		A96D329D132F6BBE0071BE55 /* Parameter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Parameter.cpp; path = ../moses/src/Parameter.cpp; sourceTree = "<group>"; };
+		A96D329E132F6BC00071BE55 /* Parameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Parameter.h; path = ../moses/src/Parameter.h; sourceTree = "<group>"; };
+		A96D32A0132F6BCE0071BE55 /* SentenceStats.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SentenceStats.cpp; path = ../moses/src/SentenceStats.cpp; sourceTree = "<group>"; };
+		A96D32A1132F6BD00071BE55 /* SentenceStats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SentenceStats.h; path = ../moses/src/SentenceStats.h; sourceTree = "<group>"; };
+		A96D32A3132F6BE60071BE55 /* DecodeGraph.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DecodeGraph.cpp; path = ../moses/src/DecodeGraph.cpp; sourceTree = "<group>"; };
+		A96D32A4132F6BE80071BE55 /* DecodeGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DecodeGraph.h; path = ../moses/src/DecodeGraph.h; sourceTree = "<group>"; };
+		A96D32A6132F6BFA0071BE55 /* DecodeStep.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DecodeStep.cpp; path = ../moses/src/DecodeStep.cpp; sourceTree = "<group>"; };
+		A96D32A7132F6BFC0071BE55 /* DecodeStep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DecodeStep.h; path = ../moses/src/DecodeStep.h; sourceTree = "<group>"; };
+		A96D32A9132F6C220071BE55 /* PhraseDictionaryMemory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PhraseDictionaryMemory.cpp; path = ../moses/src/PhraseDictionaryMemory.cpp; sourceTree = "<group>"; };
+		A96D32AA132F6C250071BE55 /* PhraseDictionaryMemory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhraseDictionaryMemory.h; path = ../moses/src/PhraseDictionaryMemory.h; sourceTree = "<group>"; };
+		A96D32AC132F6C440071BE55 /* PhraseDictionary.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PhraseDictionary.cpp; path = ../moses/src/PhraseDictionary.cpp; sourceTree = "<group>"; };
+		A96D32AD132F6C460071BE55 /* PhraseDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhraseDictionary.h; path = ../moses/src/PhraseDictionary.h; sourceTree = "<group>"; };
+		A96D32AE132F6C4B0071BE55 /* PhraseDictionaryNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PhraseDictionaryNode.cpp; path = ../moses/src/PhraseDictionaryNode.cpp; sourceTree = "<group>"; };
+		A96D32AF132F6C520071BE55 /* PhraseDictionaryNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhraseDictionaryNode.h; path = ../moses/src/PhraseDictionaryNode.h; sourceTree = "<group>"; };
+		A96D32B2132F6C920071BE55 /* WordsRange.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = WordsRange.cpp; path = ../moses/src/WordsRange.cpp; sourceTree = "<group>"; };
+		A96D32B3132F6C940071BE55 /* WordsRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WordsRange.h; path = ../moses/src/WordsRange.h; sourceTree = "<group>"; };
+		A96D32B5132F6CEB0071BE55 /* ReorderingStack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ReorderingStack.cpp; path = ../moses/src/ReorderingStack.cpp; sourceTree = "<group>"; };
+		A96D32B6132F6CEE0071BE55 /* ReorderingStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReorderingStack.h; path = ../moses/src/ReorderingStack.h; sourceTree = "<group>"; };
+		A96D32B8132F6D3E0071BE55 /* DecodeStepGeneration.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DecodeStepGeneration.cpp; path = ../moses/src/DecodeStepGeneration.cpp; sourceTree = "<group>"; };
+		A96D32B9132F6D410071BE55 /* DecodeStepGeneration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DecodeStepGeneration.h; path = ../moses/src/DecodeStepGeneration.h; sourceTree = "<group>"; };
+		A96D32BA132F6D480071BE55 /* DecodeStepTranslation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DecodeStepTranslation.cpp; path = ../moses/src/DecodeStepTranslation.cpp; sourceTree = "<group>"; };
+		A96D32BB132F6D550071BE55 /* DecodeStepTranslation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DecodeStepTranslation.h; path = ../moses/src/DecodeStepTranslation.h; sourceTree = "<group>"; };
+		A96D32BE132F6D820071BE55 /* DummyScoreProducers.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DummyScoreProducers.cpp; path = ../moses/src/DummyScoreProducers.cpp; sourceTree = "<group>"; };
+		A96D32BF132F6D850071BE55 /* DummyScoreProducers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DummyScoreProducers.h; path = ../moses/src/DummyScoreProducers.h; sourceTree = "<group>"; };
+		A96D32C1132F6DAA0071BE55 /* GlobalLexicalModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GlobalLexicalModel.cpp; path = ../moses/src/GlobalLexicalModel.cpp; sourceTree = "<group>"; };
+		A96D32C2132F6DAE0071BE55 /* GlobalLexicalModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GlobalLexicalModel.h; path = ../moses/src/GlobalLexicalModel.h; sourceTree = "<group>"; };
+		A96D32C4132F6E260071BE55 /* PhraseDictionaryDynSuffixArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PhraseDictionaryDynSuffixArray.cpp; path = ../moses/src/PhraseDictionaryDynSuffixArray.cpp; sourceTree = "<group>"; };
+		A96D32C5132F6E290071BE55 /* PhraseDictionaryDynSuffixArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhraseDictionaryDynSuffixArray.h; path = ../moses/src/PhraseDictionaryDynSuffixArray.h; sourceTree = "<group>"; };
+		A96D32C6132F6E2F0071BE55 /* PhraseDictionaryNewFormat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PhraseDictionaryNewFormat.cpp; path = ../moses/src/PhraseDictionaryNewFormat.cpp; sourceTree = "<group>"; };
+		A96D32C7132F6E380071BE55 /* PhraseDictionaryNewFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhraseDictionaryNewFormat.h; path = ../moses/src/PhraseDictionaryNewFormat.h; sourceTree = "<group>"; };
+		A96D32C8132F6E470071BE55 /* PhraseDictionaryNodeNewFormat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PhraseDictionaryNodeNewFormat.cpp; path = ../moses/src/PhraseDictionaryNodeNewFormat.cpp; sourceTree = "<group>"; };
+		A96D32C9132F6E5B0071BE55 /* PhraseDictionaryNodeNewFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhraseDictionaryNodeNewFormat.h; path = ../moses/src/PhraseDictionaryNodeNewFormat.h; sourceTree = "<group>"; };
+		A96D32CA132F6E730071BE55 /* PhraseDictionaryOnDisk.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PhraseDictionaryOnDisk.cpp; path = ../moses/src/PhraseDictionaryOnDisk.cpp; sourceTree = "<group>"; };
+		A96D32CB132F6E910071BE55 /* PhraseDictionaryOnDisk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhraseDictionaryOnDisk.h; path = ../moses/src/PhraseDictionaryOnDisk.h; sourceTree = "<group>"; };
+		A96D32CC132F6EB40071BE55 /* PhraseDictionaryTreeAdaptor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PhraseDictionaryTreeAdaptor.cpp; path = ../moses/src/PhraseDictionaryTreeAdaptor.cpp; sourceTree = "<group>"; };
+		A96D32CD132F6EDA0071BE55 /* PhraseDictionaryTreeAdaptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhraseDictionaryTreeAdaptor.h; path = ../moses/src/PhraseDictionaryTreeAdaptor.h; sourceTree = "<group>"; };
+		A96D32D3132F6FDF0071BE55 /* BilingualDynSuffixArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BilingualDynSuffixArray.cpp; path = ../moses/src/BilingualDynSuffixArray.cpp; sourceTree = "<group>"; };
+		A96D32D4132F6FE40071BE55 /* BilingualDynSuffixArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BilingualDynSuffixArray.h; path = ../moses/src/BilingualDynSuffixArray.h; sourceTree = "<group>"; };
+		A96D32D6132F702E0071BE55 /* DynSuffixArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DynSuffixArray.cpp; path = ../moses/src/DynSuffixArray.cpp; sourceTree = "<group>"; };
+		A96D32D7132F70310071BE55 /* DynSuffixArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DynSuffixArray.h; path = ../moses/src/DynSuffixArray.h; sourceTree = "<group>"; };
+		A96D32D9132F70640071BE55 /* PhraseDictionaryTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PhraseDictionaryTree.cpp; path = ../moses/src/PhraseDictionaryTree.cpp; sourceTree = "<group>"; };
+		A96D32DA132F70680071BE55 /* PhraseDictionaryTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhraseDictionaryTree.h; path = ../moses/src/PhraseDictionaryTree.h; sourceTree = "<group>"; };
+		A96D32DC132F70BC0071BE55 /* ChartRuleCollection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ChartRuleCollection.cpp; path = ../moses/src/ChartRuleCollection.cpp; sourceTree = "<group>"; };
+		A96D32DD132F70C00071BE55 /* ChartRuleCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChartRuleCollection.h; path = ../moses/src/ChartRuleCollection.h; sourceTree = "<group>"; };
+		A96D32DF132F70D00071BE55 /* DotChart.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DotChart.cpp; path = ../moses/src/DotChart.cpp; sourceTree = "<group>"; };
+		A96D32E0132F70D40071BE55 /* DotChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DotChart.h; path = ../moses/src/DotChart.h; sourceTree = "<group>"; };
+		A96D32E2132F71040071BE55 /* AlignmentInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AlignmentInfo.cpp; path = ../moses/src/AlignmentInfo.cpp; sourceTree = "<group>"; };
+		A96D32E3132F71090071BE55 /* AlignmentInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AlignmentInfo.h; path = ../moses/src/AlignmentInfo.h; sourceTree = "<group>"; };
+		A96D32E5132F71810071BE55 /* FeatureFunction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FeatureFunction.cpp; path = ../moses/src/FeatureFunction.cpp; sourceTree = "<group>"; };
+		A96D32E6132F71850071BE55 /* FeatureFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeatureFunction.h; path = ../moses/src/FeatureFunction.h; sourceTree = "<group>"; };
+		A96D32E8132F71F20071BE55 /* ScoreComponentCollection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ScoreComponentCollection.cpp; path = ../moses/src/ScoreComponentCollection.cpp; sourceTree = "<group>"; };
+		A96D32E9132F71F70071BE55 /* ScoreComponentCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScoreComponentCollection.h; path = ../moses/src/ScoreComponentCollection.h; sourceTree = "<group>"; };
+		A96D32EB132F72390071BE55 /* ChartRule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ChartRule.cpp; path = ../moses/src/ChartRule.cpp; sourceTree = "<group>"; };
+		A96D32EC132F723E0071BE55 /* ChartRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChartRule.h; path = ../moses/src/ChartRule.h; sourceTree = "<group>"; };
+		A96D32EE132F727C0071BE55 /* CellCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CellCollection.h; path = ../moses/src/CellCollection.h; sourceTree = "<group>"; };
+		A96D32F0132F73260071BE55 /* liboolm.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liboolm.a; path = ../../srilm/lib/macosx/liboolm.a; sourceTree = "<group>"; };
+		A96D32F2132F733A0071BE55 /* libirstlm.dylib */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libirstlm.dylib; path = ../../../../../../../../sw/lib/libirstlm.dylib; sourceTree = "<group>"; };
+		A96D32F4132F73870071BE55 /* Search.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Search.cpp; path = ../moses/src/Search.cpp; sourceTree = "<group>"; };
+		A96D32F5132F738C0071BE55 /* Search.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Search.h; path = ../moses/src/Search.h; sourceTree = "<group>"; };
+		A96D32F7132F73C70071BE55 /* SquareMatrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SquareMatrix.cpp; path = ../moses/src/SquareMatrix.cpp; sourceTree = "<group>"; };
+		A96D32F8132F73CD0071BE55 /* SquareMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SquareMatrix.h; path = ../moses/src/SquareMatrix.h; sourceTree = "<group>"; };
+		A96D32F9132F73DD0071BE55 /* TrellisPathCollection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TrellisPathCollection.cpp; path = ../moses/src/TrellisPathCollection.cpp; sourceTree = "<group>"; };
+		A96D32FA132F73F40071BE55 /* TrellisPathCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrellisPathCollection.h; path = ../moses/src/TrellisPathCollection.h; sourceTree = "<group>"; };
+		A96D32FD132F744C0071BE55 /* SearchCubePruning.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SearchCubePruning.cpp; path = ../moses/src/SearchCubePruning.cpp; sourceTree = "<group>"; };
+		A96D32FE132F74510071BE55 /* SearchCubePruning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchCubePruning.h; path = ../moses/src/SearchCubePruning.h; sourceTree = "<group>"; };
+		A96D32FF132F745A0071BE55 /* SearchNormal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SearchNormal.cpp; path = ../moses/src/SearchNormal.cpp; sourceTree = "<group>"; };
+		A96D3300132F746B0071BE55 /* SearchNormal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchNormal.h; path = ../moses/src/SearchNormal.h; sourceTree = "<group>"; };
+		A96D3303132F74CB0071BE55 /* BitmapContainer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BitmapContainer.cpp; path = ../moses/src/BitmapContainer.cpp; sourceTree = "<group>"; };
+		A96D3304132F74D00071BE55 /* BitmapContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BitmapContainer.h; path = ../moses/src/BitmapContainer.h; sourceTree = "<group>"; };
+		A96D3306132F74EC0071BE55 /* HypothesisStack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HypothesisStack.cpp; path = ../moses/src/HypothesisStack.cpp; sourceTree = "<group>"; };
+		A96D3307132F74F10071BE55 /* HypothesisStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HypothesisStack.h; path = ../moses/src/HypothesisStack.h; sourceTree = "<group>"; };
+		A96D3308132F74FA0071BE55 /* HypothesisStackCubePruning.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HypothesisStackCubePruning.cpp; path = ../moses/src/HypothesisStackCubePruning.cpp; sourceTree = "<group>"; };
+		A96D3309132F75090071BE55 /* HypothesisStackCubePruning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HypothesisStackCubePruning.h; path = ../moses/src/HypothesisStackCubePruning.h; sourceTree = "<group>"; };
+		A96D330A132F75230071BE55 /* HypothesisStackNormal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HypothesisStackNormal.cpp; path = ../moses/src/HypothesisStackNormal.cpp; sourceTree = "<group>"; };
+		A96D330B132F75450071BE55 /* HypothesisStackNormal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HypothesisStackNormal.h; path = ../moses/src/HypothesisStackNormal.h; sourceTree = "<group>"; };
+		A96D330F132F75B00071BE55 /* PartialTranslOptColl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PartialTranslOptColl.cpp; path = ../moses/src/PartialTranslOptColl.cpp; sourceTree = "<group>"; };
+		A96D3310132F75E30071BE55 /* PartialTranslOptColl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PartialTranslOptColl.h; path = ../moses/src/PartialTranslOptColl.h; sourceTree = "<group>"; };
+		A96D3316132F78590071BE55 /* fdstream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fdstream.h; sourceTree = "<group>"; };
+		A96D3317132F785B0071BE55 /* file.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = file.cpp; sourceTree = "<group>"; };
+		A96D3318132F785F0071BE55 /* file.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = file.h; sourceTree = "<group>"; };
+		A96D3319132F78650071BE55 /* types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
+		A96D331A132F786C0071BE55 /* utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
+		A96D331B132F78750071BE55 /* vocab.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vocab.cpp; sourceTree = "<group>"; };
+		A96D331C132F78880071BE55 /* vocab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vocab.h; sourceTree = "<group>"; };
+		A96D3321132F7B8C0071BE55 /* libdstruct.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libdstruct.a; path = ../../srilm/lib/macosx/libdstruct.a; sourceTree = "<group>"; };
+		A96D3322132F7B8C0071BE55 /* libflm.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libflm.a; path = ../../srilm/lib/macosx/libflm.a; sourceTree = "<group>"; };
+		A96D3324132F7B8C0071BE55 /* libmisc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmisc.a; path = ../../srilm/lib/macosx/libmisc.a; sourceTree = "<group>"; };
+		A96D332B132F7BED0071BE55 /* NGramCollection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NGramCollection.cpp; path = ../moses/src/NGramCollection.cpp; sourceTree = "<group>"; };
+		A96D332C132F7BF50071BE55 /* NGramCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NGramCollection.h; path = ../moses/src/NGramCollection.h; sourceTree = "<group>"; };
+		A96D332D132F7C070071BE55 /* NGramNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NGramNode.cpp; path = ../moses/src/NGramNode.cpp; sourceTree = "<group>"; };
+		A96D332E132F7C2A0071BE55 /* NGramNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NGramNode.h; path = ../moses/src/NGramNode.h; sourceTree = "<group>"; };
+		A96D3331132F7CDB0071BE55 /* FactorTypeSet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FactorTypeSet.cpp; path = ../moses/src/FactorTypeSet.cpp; sourceTree = "<group>"; };
+		A96D3332132F7CE40071BE55 /* FactorTypeSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FactorTypeSet.h; path = ../moses/src/FactorTypeSet.h; sourceTree = "<group>"; };
+		A96D3334132F7D4C0071BE55 /* WordConsumed.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = WordConsumed.cpp; path = ../moses/src/WordConsumed.cpp; sourceTree = "<group>"; };
+		A96D3335132F7D550071BE55 /* WordConsumed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WordConsumed.h; path = ../moses/src/WordConsumed.h; sourceTree = "<group>"; };
+		A96D333B132F7E920071BE55 /* OnDiskPt.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OnDiskPt.xcodeproj; path = ../OnDiskPt/OnDiskPt.xcodeproj; sourceTree = "<group>"; };
+		A96D334D132F96CF0071BE55 /* DotChartOnDisk.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DotChartOnDisk.cpp; path = ../moses/src/DotChartOnDisk.cpp; sourceTree = "<group>"; };
+		A96D334E132F96E40071BE55 /* DotChartOnDisk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DotChartOnDisk.h; path = ../moses/src/DotChartOnDisk.h; sourceTree = "<group>"; };
+		A96D3350132F97ED0071BE55 /* PhraseDictionaryNewFormatChart.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PhraseDictionaryNewFormatChart.cpp; path = ../moses/src/PhraseDictionaryNewFormatChart.cpp; sourceTree = "<group>"; };
+		A96D3351132F97FD0071BE55 /* PhraseDictionaryOnDiskChart.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PhraseDictionaryOnDiskChart.cpp; path = ../moses/src/PhraseDictionaryOnDiskChart.cpp; sourceTree = "<group>"; };
+		A9F9617F1330B8AF00F435D3 /* libOnDiskPt.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; name = libOnDiskPt.a; path = "../../../../../../../../Desktop/курсове - университет/EuroMatrixPlus/software/moses-trunk/OnDiskPt/usr/local/lib/libOnDiskPt.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A969D5EA132F511D00087586 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A969D604132F526C00087586 /* libz.1.2.5.dylib in Frameworks */,
+				A969D607132F527800087586 /* libbz2.1.0.6.dylib in Frameworks */,
+				A9399935166929EB0065D7E4 /* libOnDiskPt.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A969D5F5132F51AD00087586 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9F961801330B8AF00F435D3 /* libOnDiskPt.a in Frameworks */,
+				A969D605132F526C00087586 /* libz.1.2.5.dylib in Frameworks */,
+				A969D608132F527800087586 /* libbz2.1.0.6.dylib in Frameworks */,
+				A96D3349132F94D30071BE55 /* libflm.a in Frameworks */,
+				A96D334A132F94DE0071BE55 /* libdstruct.a in Frameworks */,
+				A96D334B132F94FC0071BE55 /* libmisc.a in Frameworks */,
+				A96D334C132F95150071BE55 /* liboolm.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A969D5A3132F4DA500087586 = {
+			isa = PBXGroup;
+			children = (
+				A96D333B132F7E920071BE55 /* OnDiskPt.xcodeproj */,
+				A96D32EF132F73030071BE55 /* Libraries */,
+				A969D5B1132F4DA600087586 /* Binarisation */,
+				A969D5AF132F4DA600087586 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A969D5AF132F4DA600087586 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A969D5ED132F511D00087586 /* processPhraseTable */,
+				A969D5FA132F51AD00087586 /* processLexicalTable-debug */,
+			);
+			name = Products;
+			sourceTree = SOURCE_ROOT;
+		};
+		A969D5B1132F4DA600087586 /* Binarisation */ = {
+			isa = PBXGroup;
+			children = (
+				A969D5C7132F4F0300087586 /* TypeDef.h */,
+				A969D5BF132F4E5000087586 /* processLexicalTable.cpp */,
+				A969D5C0132F4E5000087586 /* processPhraseTable.cpp */,
+				A969D5C3132F4EC600087586 /* LexicalReorderingTable.cpp */,
+				A969D5C4132F4EC600087586 /* LexicalReorderingTable.h */,
+				A969D5C8132F4F1400087586 /* PhraseDictionaryTree.cpp */,
+				A969D5C9132F4F1400087586 /* PhraseDictionaryTree.h */,
+				A969D5CA132F4F2400087586 /* ConfusionNet.cpp */,
+				A969D5CB132F4F2400087586 /* ConfusionNet.h */,
+				A96D32E5132F71810071BE55 /* FeatureFunction.cpp */,
+				A96D32E6132F71850071BE55 /* FeatureFunction.h */,
+				A96D3246132F64E60071BE55 /* FFState.cpp */,
+				A96D3247132F64E70071BE55 /* FFState.h */,
+				A96D329D132F6BBE0071BE55 /* Parameter.cpp */,
+				A96D329E132F6BC00071BE55 /* Parameter.h */,
+				A96D3331132F7CDB0071BE55 /* FactorTypeSet.cpp */,
+				A96D3332132F7CE40071BE55 /* FactorTypeSet.h */,
+				A969D5DF132F4FFE00087586 /* Factor.cpp */,
+				A969D5E0132F4FFE00087586 /* Factor.h */,
+				A969D5CC132F4F3700087586 /* FactorCollection.cpp */,
+				A969D5CD132F4F3700087586 /* FactorCollection.h */,
+				A96D332B132F7BED0071BE55 /* NGramCollection.cpp */,
+				A96D332C132F7BF50071BE55 /* NGramCollection.h */,
+				A96D332D132F7C070071BE55 /* NGramNode.cpp */,
+				A96D332E132F7C2A0071BE55 /* NGramNode.h */,
+				A969D5D6132F4F9800087586 /* Word.cpp */,
+				A969D5D7132F4F9800087586 /* Word.h */,
+				A969D5CE132F4F4600087586 /* Phrase.cpp */,
+				A969D5CF132F4F4700087586 /* Phrase.h */,
+				A96D329A132F6B760071BE55 /* TargetPhrase.cpp */,
+				A96D329B132F6B780071BE55 /* TargetPhrase.h */,
+				A969D5D2132F4F7900087586 /* Sentence.cpp */,
+				A969D5D3132F4F7900087586 /* Sentence.h */,
+				A96D32A0132F6BCE0071BE55 /* SentenceStats.cpp */,
+				A96D32A1132F6BD00071BE55 /* SentenceStats.h */,
+				A96D32A3132F6BE60071BE55 /* DecodeGraph.cpp */,
+				A96D32A4132F6BE80071BE55 /* DecodeGraph.h */,
+				A96D32A6132F6BFA0071BE55 /* DecodeStep.cpp */,
+				A96D32A7132F6BFC0071BE55 /* DecodeStep.h */,
+				A96D32B8132F6D3E0071BE55 /* DecodeStepGeneration.cpp */,
+				A96D32B9132F6D410071BE55 /* DecodeStepGeneration.h */,
+				A96D32BA132F6D480071BE55 /* DecodeStepTranslation.cpp */,
+				A96D32BB132F6D550071BE55 /* DecodeStepTranslation.h */,
+				A969D60F132F538600087586 /* PrefixTree.h */,
+				A969D5D0132F4F6400087586 /* PrefixTreeMap.cpp */,
+				A969D5D1132F4F6400087586 /* PrefixTreeMap.h */,
+				A96D3303132F74CB0071BE55 /* BitmapContainer.cpp */,
+				A96D3304132F74D00071BE55 /* BitmapContainer.h */,
+				A969D5D8132F4FA500087586 /* WordsBitmap.cpp */,
+				A969D5D9132F4FA600087586 /* WordsBitmap.h */,
+				A96D32B2132F6C920071BE55 /* WordsRange.cpp */,
+				A96D32B3132F6C940071BE55 /* WordsRange.h */,
+				A96D3334132F7D4C0071BE55 /* WordConsumed.cpp */,
+				A96D3335132F7D550071BE55 /* WordConsumed.h */,
+				A96D324F132F655C0071BE55 /* TargetPhraseCollection.cpp */,
+				A96D3250132F655C0071BE55 /* TargetPhraseCollection.h */,
+				A96D3240132F64B40071BE55 /* LexicalReordering.cpp */,
+				A96D3241132F64B40071BE55 /* LexicalReordering.h */,
+				A96D3243132F64C90071BE55 /* LexicalReorderingState.cpp */,
+				A96D3244132F64C90071BE55 /* LexicalReorderingState.h */,
+				A96D32C1132F6DAA0071BE55 /* GlobalLexicalModel.cpp */,
+				A96D32C2132F6DAE0071BE55 /* GlobalLexicalModel.h */,
+				A96D3249132F650C0071BE55 /* Hypothesis.cpp */,
+				A96D324A132F650C0071BE55 /* Hypothesis.h */,
+				A96D3306132F74EC0071BE55 /* HypothesisStack.cpp */,
+				A96D3307132F74F10071BE55 /* HypothesisStack.h */,
+				A96D3308132F74FA0071BE55 /* HypothesisStackCubePruning.cpp */,
+				A96D3309132F75090071BE55 /* HypothesisStackCubePruning.h */,
+				A96D330A132F75230071BE55 /* HypothesisStackNormal.cpp */,
+				A96D330B132F75450071BE55 /* HypothesisStackNormal.h */,
+				A96D324C132F65420071BE55 /* InputType.cpp */,
+				A96D324D132F65420071BE55 /* InputType.h */,
+				A969D60C132F531500087586 /* StaticData.cpp */,
+				A969D60D132F531900087586 /* StaticData.h */,
+				A96D3255132F65C30071BE55 /* LanguageModel.cpp */,
+				A96D3256132F65C40071BE55 /* LanguageModel.h */,
+				A96D3257132F65C60071BE55 /* LanguageModelFactory.cpp */,
+				A96D3258132F65CA0071BE55 /* LanguageModelFactory.h */,
+				A96D3261132F66760071BE55 /* LanguageModelInternal.cpp */,
+				A96D3262132F66770071BE55 /* LanguageModelInternal.h */,
+				A96D3263132F667A0071BE55 /* LanguageModelJoint.cpp */,
+				A96D3264132F667F0071BE55 /* LanguageModelJoint.h */,
+				A96D3265132F66850071BE55 /* LanguageModelSkip.cpp */,
+				A96D3266132F668D0071BE55 /* LanguageModelSkip.h */,
+				A96D326A132F66B50071BE55 /* LanguageModelIRST.cpp */,
+				A96D326B132F66B60071BE55 /* LanguageModelIRST.h */,
+				A96D326C132F66B80071BE55 /* LanguageModelParallelBackoff.cpp */,
+				A96D326D132F66BB0071BE55 /* LanguageModelParallelBackoff.h */,
+				A96D3270132F66CF0071BE55 /* LanguageModelRemote.cpp */,
+				A96D3271132F66DA0071BE55 /* LanguageModelRemote.h */,
+				A96D3272132F66E60071BE55 /* LanguageModelSRI.cpp */,
+				A96D3273132F66F30071BE55 /* LanguageModelSRI.h */,
+				A96D3282132F69FC0071BE55 /* LanguageModelSingleFactor.cpp */,
+				A96D3283132F69FE0071BE55 /* LanguageModelSingleFactor.h */,
+				A96D327C132F695E0071BE55 /* LanguageModelMultiFactor.cpp */,
+				A96D327D132F69600071BE55 /* LanguageModelMultiFactor.h */,
+				A96D3252132F65880071BE55 /* LMList.cpp */,
+				A96D3253132F65890071BE55 /* LMList.h */,
+				A969D5DD132F4FE200087586 /* LVoc.cpp */,
+				A969D5DE132F4FE200087586 /* LVoc.h */,
+				A96D3279132F678B0071BE55 /* Dictionary.cpp */,
+				A96D327A132F678C0071BE55 /* Dictionary.h */,
+				A96D327F132F69DC0071BE55 /* GenerationDictionary.cpp */,
+				A96D3280132F69DE0071BE55 /* GenerationDictionary.h */,
+				A96D331F132F78F10071BE55 /* DynSAInclude */,
+				A96D32D6132F702E0071BE55 /* DynSuffixArray.cpp */,
+				A96D32D7132F70310071BE55 /* DynSuffixArray.h */,
+				A96D32D3132F6FDF0071BE55 /* BilingualDynSuffixArray.cpp */,
+				A96D32D4132F6FE40071BE55 /* BilingualDynSuffixArray.h */,
+				A96D32A9132F6C220071BE55 /* PhraseDictionaryMemory.cpp */,
+				A96D32AA132F6C250071BE55 /* PhraseDictionaryMemory.h */,
+				A96D32AC132F6C440071BE55 /* PhraseDictionary.cpp */,
+				A96D32AD132F6C460071BE55 /* PhraseDictionary.h */,
+				A96D32AE132F6C4B0071BE55 /* PhraseDictionaryNode.cpp */,
+				A96D32AF132F6C520071BE55 /* PhraseDictionaryNode.h */,
+				A96D32C4132F6E260071BE55 /* PhraseDictionaryDynSuffixArray.cpp */,
+				A96D32C5132F6E290071BE55 /* PhraseDictionaryDynSuffixArray.h */,
+				A96D32C6132F6E2F0071BE55 /* PhraseDictionaryNewFormat.cpp */,
+				A96D32C7132F6E380071BE55 /* PhraseDictionaryNewFormat.h */,
+				A96D32C8132F6E470071BE55 /* PhraseDictionaryNodeNewFormat.cpp */,
+				A96D32C9132F6E5B0071BE55 /* PhraseDictionaryNodeNewFormat.h */,
+				A96D32CA132F6E730071BE55 /* PhraseDictionaryOnDisk.cpp */,
+				A96D32CB132F6E910071BE55 /* PhraseDictionaryOnDisk.h */,
+				A96D3350132F97ED0071BE55 /* PhraseDictionaryNewFormatChart.cpp */,
+				A96D3351132F97FD0071BE55 /* PhraseDictionaryOnDiskChart.cpp */,
+				A96D32D9132F70640071BE55 /* PhraseDictionaryTree.cpp */,
+				A96D32DA132F70680071BE55 /* PhraseDictionaryTree.h */,
+				A96D32CC132F6EB40071BE55 /* PhraseDictionaryTreeAdaptor.cpp */,
+				A96D32CD132F6EDA0071BE55 /* PhraseDictionaryTreeAdaptor.h */,
+				A96D32EE132F727C0071BE55 /* CellCollection.h */,
+				A96D32EB132F72390071BE55 /* ChartRule.cpp */,
+				A96D32EC132F723E0071BE55 /* ChartRule.h */,
+				A96D32DC132F70BC0071BE55 /* ChartRuleCollection.cpp */,
+				A96D32DD132F70C00071BE55 /* ChartRuleCollection.h */,
+				A96D32DF132F70D00071BE55 /* DotChart.cpp */,
+				A96D32E0132F70D40071BE55 /* DotChart.h */,
+				A96D334D132F96CF0071BE55 /* DotChartOnDisk.cpp */,
+				A96D334E132F96E40071BE55 /* DotChartOnDisk.h */,
+				A96D325B132F65EE0071BE55 /* Manager.cpp */,
+				A96D325C132F65EF0071BE55 /* Manager.h */,
+				A96D325E132F662A0071BE55 /* ScoreIndexManager.cpp */,
+				A96D325F132F662B0071BE55 /* ScoreIndexManager.h */,
+				A96D3297132F6B230071BE55 /* ScoreProducer.cpp */,
+				A96D3298132F6B240071BE55 /* ScoreProducer.h */,
+				A96D32E8132F71F20071BE55 /* ScoreComponentCollection.cpp */,
+				A96D32E9132F71F70071BE55 /* ScoreComponentCollection.h */,
+				A96D32BE132F6D820071BE55 /* DummyScoreProducers.cpp */,
+				A96D32BF132F6D850071BE55 /* DummyScoreProducers.h */,
+				A96D3285132F6A440071BE55 /* TranslationOption.cpp */,
+				A96D3286132F6A450071BE55 /* TranslationOption.h */,
+				A96D3287132F6A490071BE55 /* TranslationOptionCollection.cpp */,
+				A96D3288132F6A500071BE55 /* TranslationOptionCollection.h */,
+				A96D328B132F6AA30071BE55 /* TranslationOptionCollectionConfusionNet.cpp */,
+				A96D328C132F6AA40071BE55 /* TranslationOptionCollectionConfusionNet.h */,
+				A96D328D132F6AA70071BE55 /* TranslationOptionList.cpp */,
+				A96D328E132F6AAB0071BE55 /* TranslationOptionList.h */,
+				A96D3291132F6ADF0071BE55 /* TranslationOptionCollectionText.cpp */,
+				A96D3292132F6AE10071BE55 /* TranslationOptionCollectionText.h */,
+				A96D330F132F75B00071BE55 /* PartialTranslOptColl.cpp */,
+				A96D3310132F75E30071BE55 /* PartialTranslOptColl.h */,
+				A969D5E3132F502D00087586 /* XmlOption.cpp */,
+				A969D5E4132F502E00087586 /* XmlOption.h */,
+				A96D32F7132F73C70071BE55 /* SquareMatrix.cpp */,
+				A96D32F8132F73CD0071BE55 /* SquareMatrix.h */,
+				A96D32F9132F73DD0071BE55 /* TrellisPathCollection.cpp */,
+				A96D32FA132F73F40071BE55 /* TrellisPathCollection.h */,
+				A96D3294132F6AF20071BE55 /* TrellisPath.cpp */,
+				A96D3295132F6AF30071BE55 /* TrellisPath.h */,
+				A96D32F4132F73870071BE55 /* Search.cpp */,
+				A96D32F5132F738C0071BE55 /* Search.h */,
+				A96D32FD132F744C0071BE55 /* SearchCubePruning.cpp */,
+				A96D32FE132F74510071BE55 /* SearchCubePruning.h */,
+				A96D32FF132F745A0071BE55 /* SearchNormal.cpp */,
+				A96D3300132F746B0071BE55 /* SearchNormal.h */,
+				A969D5E5132F504C00087586 /* ReorderingConstraint.cpp */,
+				A969D5E6132F504D00087586 /* ReorderingConstraint.h */,
+				A96D32B5132F6CEB0071BE55 /* ReorderingStack.cpp */,
+				A96D32B6132F6CEE0071BE55 /* ReorderingStack.h */,
+				A96D32E2132F71040071BE55 /* AlignmentInfo.cpp */,
+				A96D32E3132F71090071BE55 /* AlignmentInfo.h */,
+				A969D5E1132F501100087586 /* hash.cpp */,
+				A969D5E2132F501200087586 /* hash.h */,
+				A969D5DA132F4FC400087586 /* File.cpp */,
+				A969D5DB132F4FC400087586 /* File.h */,
+				A969D602132F520E00087586 /* gzfilebuf.h */,
+				A969D5C5132F4ED200087586 /* InputFileStream.cpp */,
+				A969D5C6132F4ED200087586 /* InputFileStream.h */,
+				A969D5E7132F508200087586 /* UserMessage.cpp */,
+				A969D5E8132F508300087586 /* UserMessage.h */,
+				A969D5C1132F4EB300087586 /* Timer.cpp */,
+				A969D5C2132F4EB300087586 /* Timer.h */,
+				A969D5DC132F4FD100087586 /* ObjectPool.h */,
+				A969D5D4132F4F8B00087586 /* Util.cpp */,
+				A969D5D5132F4F8B00087586 /* Util.h */,
+			);
+			name = Binarisation;
+			sourceTree = SOURCE_ROOT;
+		};
+		A96D32EF132F73030071BE55 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				A969D603132F526B00087586 /* libz.1.2.5.dylib */,
+				A969D606132F527700087586 /* libbz2.1.0.6.dylib */,
+				A96D32F0132F73260071BE55 /* liboolm.a */,
+				A96D3321132F7B8C0071BE55 /* libdstruct.a */,
+				A96D3322132F7B8C0071BE55 /* libflm.a */,
+				A96D3324132F7B8C0071BE55 /* libmisc.a */,
+				A96D32F2132F733A0071BE55 /* libirstlm.dylib */,
+				A9F9617F1330B8AF00F435D3 /* libOnDiskPt.a */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		A96D331F132F78F10071BE55 /* DynSAInclude */ = {
+			isa = PBXGroup;
+			children = (
+				A96D3316132F78590071BE55 /* fdstream.h */,
+				A96D3317132F785B0071BE55 /* file.cpp */,
+				A96D3318132F785F0071BE55 /* file.h */,
+				A96D3319132F78650071BE55 /* types.h */,
+				A96D331A132F786C0071BE55 /* utils.h */,
+				A96D331B132F78750071BE55 /* vocab.cpp */,
+				A96D331C132F78880071BE55 /* vocab.h */,
+			);
+			name = DynSAInclude;
+			path = ../moses/src/DynSAInclude;
+			sourceTree = "<group>";
+		};
+		A96D333C132F7E920071BE55 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A96D3343132F7E980071BE55 /* libOnDiskPt.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A969D5EC132F511D00087586 /* processPhraseTable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A969D5F0132F511E00087586 /* Build configuration list for PBXNativeTarget "processPhraseTable" */;
+			buildPhases = (
+				A969D5E9132F511D00087586 /* Sources */,
+				A969D5EA132F511D00087586 /* Frameworks */,
+				A969D5EB132F511D00087586 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = processPhraseTable;
+			productName = processPhraseTable;
+			productReference = A969D5ED132F511D00087586 /* processPhraseTable */;
+			productType = "com.apple.product-type.tool";
+		};
+		A969D5F3132F51AD00087586 /* processLexicalTable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A969D5F7132F51AD00087586 /* Build configuration list for PBXNativeTarget "processLexicalTable" */;
+			buildPhases = (
+				A969D5F4132F51AD00087586 /* Sources */,
+				A969D5F5132F51AD00087586 /* Frameworks */,
+				A969D5F6132F51AD00087586 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A96D3346132F93760071BE55 /* PBXTargetDependency */,
+			);
+			name = processLexicalTable;
+			productName = processPhraseTable;
+			productReference = A969D5FA132F51AD00087586 /* processLexicalTable-debug */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A969D5A5132F4DA500087586 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Autodesk Sàrl";
+			};
+			buildConfigurationList = A969D5A8132F4DA500087586 /* Build configuration list for PBXProject "Binarisation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A969D5A3132F4DA500087586;
+			productRefGroup = A969D5AF132F4DA600087586 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A96D333C132F7E920071BE55 /* Products */;
+					ProjectRef = A96D333B132F7E920071BE55 /* OnDiskPt.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				A969D5F3132F51AD00087586 /* processLexicalTable */,
+				A969D5EC132F511D00087586 /* processPhraseTable */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A96D3343132F7E980071BE55 /* libOnDiskPt.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libOnDiskPt.a;
+			remoteRef = A96D3342132F7E980071BE55 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A969D5E9132F511D00087586 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A969D5FD132F51CD00087586 /* processPhraseTable.cpp in Sources */,
+				A939992E166927330065D7E4 /* InputFileStream.cpp in Sources */,
+				A939992F1669275C0065D7E4 /* PhraseDictionaryTree.cpp in Sources */,
+				A9399930166927C50065D7E4 /* Dictionary.cpp in Sources */,
+				A9399931166928910065D7E4 /* Util.cpp in Sources */,
+				A9399932166928CA0065D7E4 /* LVoc.cpp in Sources */,
+				A93999331669291E0065D7E4 /* Timer.cpp in Sources */,
+				A9399934166929340065D7E4 /* UserMessage.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A969D5F4132F51AD00087586 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A969D5FC132F51C600087586 /* processLexicalTable.cpp in Sources */,
+				A969D5FF132F51DF00087586 /* Util.cpp in Sources */,
+				A969D600132F51E800087586 /* InputFileStream.cpp in Sources */,
+				A969D601132F51F500087586 /* LexicalReorderingTable.cpp in Sources */,
+				A969D609132F52EF00087586 /* Phrase.cpp in Sources */,
+				A969D60A132F52F200087586 /* Word.cpp in Sources */,
+				A969D60B132F52FB00087586 /* WordsBitmap.cpp in Sources */,
+				A969D60E132F532000087586 /* StaticData.cpp in Sources */,
+				A969D610132F538E00087586 /* PrefixTreeMap.cpp in Sources */,
+				A96D3238132F63F10071BE55 /* ConfusionNet.cpp in Sources */,
+				A96D323A132F63F50071BE55 /* Sentence.cpp in Sources */,
+				A96D323B132F64130071BE55 /* UserMessage.cpp in Sources */,
+				A96D323C132F64190071BE55 /* FactorCollection.cpp in Sources */,
+				A96D323D132F64200071BE55 /* Factor.cpp in Sources */,
+				A96D323E132F64380071BE55 /* ReorderingConstraint.cpp in Sources */,
+				A96D323F132F64580071BE55 /* LVoc.cpp in Sources */,
+				A96D3242132F64B50071BE55 /* LexicalReordering.cpp in Sources */,
+				A96D3245132F64CA0071BE55 /* LexicalReorderingState.cpp in Sources */,
+				A96D3248132F64E80071BE55 /* FFState.cpp in Sources */,
+				A96D324B132F650E0071BE55 /* Hypothesis.cpp in Sources */,
+				A96D324E132F65430071BE55 /* InputType.cpp in Sources */,
+				A96D3251132F655E0071BE55 /* TargetPhraseCollection.cpp in Sources */,
+				A96D3254132F658A0071BE55 /* LMList.cpp in Sources */,
+				A96D3259132F65D00071BE55 /* LanguageModel.cpp in Sources */,
+				A96D325A132F65D00071BE55 /* LanguageModelFactory.cpp in Sources */,
+				A96D325D132F65F20071BE55 /* Manager.cpp in Sources */,
+				A96D3260132F662E0071BE55 /* ScoreIndexManager.cpp in Sources */,
+				A96D3267132F66960071BE55 /* LanguageModelInternal.cpp in Sources */,
+				A96D3268132F66960071BE55 /* LanguageModelJoint.cpp in Sources */,
+				A96D3269132F66960071BE55 /* LanguageModelSkip.cpp in Sources */,
+				A96D3275132F67020071BE55 /* LanguageModelParallelBackoff.cpp in Sources */,
+				A96D3277132F67020071BE55 /* LanguageModelRemote.cpp in Sources */,
+				A96D3278132F67020071BE55 /* LanguageModelSRI.cpp in Sources */,
+				A96D327B132F678F0071BE55 /* Dictionary.cpp in Sources */,
+				A96D327E132F69630071BE55 /* LanguageModelMultiFactor.cpp in Sources */,
+				A96D3281132F69E10071BE55 /* GenerationDictionary.cpp in Sources */,
+				A96D3284132F6A000071BE55 /* LanguageModelSingleFactor.cpp in Sources */,
+				A96D3289132F6A580071BE55 /* TranslationOption.cpp in Sources */,
+				A96D328A132F6A580071BE55 /* TranslationOptionCollection.cpp in Sources */,
+				A96D328F132F6AAF0071BE55 /* TranslationOptionCollectionConfusionNet.cpp in Sources */,
+				A96D3290132F6AAF0071BE55 /* TranslationOptionList.cpp in Sources */,
+				A96D3293132F6AE30071BE55 /* TranslationOptionCollectionText.cpp in Sources */,
+				A96D3296132F6AF60071BE55 /* TrellisPath.cpp in Sources */,
+				A96D3299132F6B270071BE55 /* ScoreProducer.cpp in Sources */,
+				A96D329C132F6B7B0071BE55 /* TargetPhrase.cpp in Sources */,
+				A96D329F132F6BC30071BE55 /* Parameter.cpp in Sources */,
+				A96D32A2132F6BD30071BE55 /* SentenceStats.cpp in Sources */,
+				A96D32A5132F6BEC0071BE55 /* DecodeGraph.cpp in Sources */,
+				A96D32A8132F6C000071BE55 /* DecodeStep.cpp in Sources */,
+				A96D32AB132F6C290071BE55 /* PhraseDictionaryMemory.cpp in Sources */,
+				A96D32B0132F6C5D0071BE55 /* PhraseDictionary.cpp in Sources */,
+				A96D32B1132F6C5D0071BE55 /* PhraseDictionaryNode.cpp in Sources */,
+				A96D32B4132F6C990071BE55 /* WordsRange.cpp in Sources */,
+				A96D32B7132F6CF30071BE55 /* ReorderingStack.cpp in Sources */,
+				A96D32BC132F6D680071BE55 /* DecodeStepGeneration.cpp in Sources */,
+				A96D32BD132F6D680071BE55 /* DecodeStepTranslation.cpp in Sources */,
+				A96D32C0132F6D8B0071BE55 /* DummyScoreProducers.cpp in Sources */,
+				A96D32C3132F6DB40071BE55 /* GlobalLexicalModel.cpp in Sources */,
+				A96D32CE132F6F030071BE55 /* PhraseDictionaryDynSuffixArray.cpp in Sources */,
+				A96D32CF132F6F030071BE55 /* PhraseDictionaryNewFormat.cpp in Sources */,
+				A96D32D0132F6F030071BE55 /* PhraseDictionaryNodeNewFormat.cpp in Sources */,
+				A96D32D1132F6F030071BE55 /* PhraseDictionaryOnDisk.cpp in Sources */,
+				A96D32D2132F6F030071BE55 /* PhraseDictionaryTreeAdaptor.cpp in Sources */,
+				A96D32D5132F6FED0071BE55 /* BilingualDynSuffixArray.cpp in Sources */,
+				A96D32D8132F70370071BE55 /* DynSuffixArray.cpp in Sources */,
+				A96D32DB132F706E0071BE55 /* PhraseDictionaryTree.cpp in Sources */,
+				A96D32DE132F70C70071BE55 /* ChartRuleCollection.cpp in Sources */,
+				A96D32E1132F70DB0071BE55 /* DotChart.cpp in Sources */,
+				A96D32E4132F71120071BE55 /* AlignmentInfo.cpp in Sources */,
+				A96D32E7132F718C0071BE55 /* FeatureFunction.cpp in Sources */,
+				A96D32EA132F71FF0071BE55 /* ScoreComponentCollection.cpp in Sources */,
+				A96D32ED132F72460071BE55 /* ChartRule.cpp in Sources */,
+				A96D32F6132F73950071BE55 /* Search.cpp in Sources */,
+				A96D32FB132F74120071BE55 /* SquareMatrix.cpp in Sources */,
+				A96D32FC132F74120071BE55 /* TrellisPathCollection.cpp in Sources */,
+				A96D3301132F74850071BE55 /* SearchCubePruning.cpp in Sources */,
+				A96D3302132F74850071BE55 /* SearchNormal.cpp in Sources */,
+				A96D3305132F74DA0071BE55 /* BitmapContainer.cpp in Sources */,
+				A96D330C132F756B0071BE55 /* HypothesisStack.cpp in Sources */,
+				A96D330D132F756B0071BE55 /* HypothesisStackCubePruning.cpp in Sources */,
+				A96D330E132F756B0071BE55 /* HypothesisStackNormal.cpp in Sources */,
+				A96D3311132F76110071BE55 /* PartialTranslOptColl.cpp in Sources */,
+				A96D331D132F78A70071BE55 /* file.cpp in Sources */,
+				A96D331E132F78A70071BE55 /* vocab.cpp in Sources */,
+				A96D3320132F7B300071BE55 /* XmlOption.cpp in Sources */,
+				A96D332F132F7C5F0071BE55 /* NGramCollection.cpp in Sources */,
+				A96D3330132F7C5F0071BE55 /* NGramNode.cpp in Sources */,
+				A96D3333132F7CF50071BE55 /* FactorTypeSet.cpp in Sources */,
+				A96D3336132F7D670071BE55 /* WordConsumed.cpp in Sources */,
+				A96D334F132F971B0071BE55 /* DotChartOnDisk.cpp in Sources */,
+				A96D3352132F98220071BE55 /* PhraseDictionaryNewFormatChart.cpp in Sources */,
+				A96D3353132F98220071BE55 /* PhraseDictionaryOnDiskChart.cpp in Sources */,
+				A9F96176132FB7BD00F435D3 /* Timer.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A96D3346132F93760071BE55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OnDiskPt;
+			targetProxy = A96D3345132F93760071BE55 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A969D5B5132F4DA600087586 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					/sw/include,
+					/usr/include,
+					/sw/include/srilm,
+					/sw/include/irstlm,
+					"\"/Users/ventzi/Desktop/курсове - университет/EuroMatrixPlus/software/moses-trunk/OnDiskPt/src\"",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/sw/lib,
+					/usr/lib,
+					/sw/lib/srilm,
+					"\"/Users/ventzi/Desktop/курсове - университет/EuroMatrixPlus/software/moses-trunk/OnDiskPt/usr/local/lib\"",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A969D5B6132F4DA600087586 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					/sw/include,
+					/usr/include,
+					/sw/include/srilm,
+					/sw/include/irstlm,
+					"\"/Users/ventzi/Desktop/курсове - университет/EuroMatrixPlus/software/moses-trunk/OnDiskPt/src\"",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/sw/lib,
+					/usr/lib,
+					/sw/lib/srilm,
+					"\"/Users/ventzi/Desktop/курсове - университет/EuroMatrixPlus/software/moses-trunk/OnDiskPt/usr/local/lib\"",
+				);
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A969D5F1132F511E00087586 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A969D5F2132F511E00087586 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A969D5F8132F51AD00087586 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = TRACE_ENABLE;
+				PRODUCT_NAME = "processLexicalTable-debug";
+			};
+			name = Debug;
+		};
+		A969D5F9132F51AD00087586 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = processLexicalTable;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A969D5A8132F4DA500087586 /* Build configuration list for PBXProject "Binarisation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A969D5B5132F4DA600087586 /* Debug */,
+				A969D5B6132F4DA600087586 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A969D5F0132F511E00087586 /* Build configuration list for PBXNativeTarget "processPhraseTable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A969D5F1132F511E00087586 /* Debug */,
+				A969D5F2132F511E00087586 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A969D5F7132F51AD00087586 /* Build configuration list for PBXNativeTarget "processLexicalTable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A969D5F8132F51AD00087586 /* Debug */,
+				A969D5F9132F51AD00087586 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A969D5A5132F4DA500087586 /* Project object */;
+}
