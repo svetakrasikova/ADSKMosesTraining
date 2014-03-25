@@ -12,7 +12,6 @@
 moses-cmd/
 moses-chart/
 moses-chart-cmd/
-misc/
 regression-testing/
 hypergraph-prototype/
 lmserver/
@@ -27,6 +26,10 @@ config.h
 config.log
 config.status
 configure
+misc/java-utils/
+misc/pmoses/
+misc/processLexicalTable
+misc/processPhraseTable
 mert/
 zmert/
 server/
