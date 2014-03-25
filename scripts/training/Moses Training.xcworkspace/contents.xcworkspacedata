@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:train-model.perl">
+   </FileRef>
+   <FileRef
+      location = "group:symal/symal.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "container:phrase-extract/extract.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "container:lexical-reordering/Lexical Reordering.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../misc/Binarisation.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../../mgizapp/src/mGIZA++.xcodeproj">
+   </FileRef>
+</Workspace>

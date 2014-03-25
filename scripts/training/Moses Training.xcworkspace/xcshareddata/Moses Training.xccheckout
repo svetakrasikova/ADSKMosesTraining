@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>3853323A-5352-44C3-885C-D5277DFEF62F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Moses Training</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>FDE15E75-CD66-4E76-9A18-DB061D9E59E1</key>
+		<string>https://mosesdecoder.svn.sourceforge.net/svnroot/mosesdecoder/trunk</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>scripts/training/Moses Training.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>FDE15E75-CD66-4E76-9A18-DB061D9E59E1</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>FDE15E75-CD66-4E76-9A18-DB061D9E59E1</key>
+		<string>https://mosesdecoder.svn.sourceforge.net/svnroot/mosesdecoder</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://mosesdecoder.svn.sourceforge.net/svnroot/mosesdecoder/trunk/scripts/training/Moses%20Training.xcworkspace</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>FDE15E75-CD66-4E76-9A18-DB061D9E59E1</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>FDE15E75-CD66-4E76-9A18-DB061D9E59E1</string>
+			<key>IDESourceControlWCCName</key>
+			<string>moses-trunk</string>
+		</dict>
+	</array>
+</dict>
+</plist>
